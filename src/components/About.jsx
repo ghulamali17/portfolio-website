@@ -9,7 +9,7 @@ function About() {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center text-center px-4 bg-[#0f0f0f]">
+    <div id="about" className="min-h-screen flex flex-col justify-center items-center text-center px-4">
       <h1
         className="text-[#6D65F2] font-bold text-4xl md:text-5xl mb-6"
         data-aos="zoom-in-down"
@@ -24,8 +24,8 @@ function About() {
       >
         Hello, I'm{" "}
         <span className="text-purple-400 font-medium">Ghulam Ali</span> — 
-        passionate about building smart and scalable web & mobile applications.
-        I've completed a full-stack development course and constantly explore
+        passionate about building smart and scalable web applications.
+        I've completed a full-stack development course from SMIT and constantly explore
         new technologies to refine my skills. Focused on continuous learning, I
         aim to transition into the IT industry by 2021 and eventually move
         towards AI and data science.

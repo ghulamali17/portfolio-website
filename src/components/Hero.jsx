@@ -6,9 +6,16 @@ import { TypeAnimation } from "react-type-animation";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 function Hero() {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
   return (
-    <div className="relative z-10 max-w-[1200px] mx-auto py-20 px-4 flex flex-col md:flex-row items-center gap-10">
+    <div className="relative z-10  max-w-[1200px] h-auto mx-auto py-20 px-4 flex flex-col md:flex-row items-center gap-10">
       {/* Left Text Content */}
       <div className="w-full md:w-1/2 text-center md:text-left">
         <h1 className="text-5xl md:text-7xl font-extrabold text-white tracking-tight leading-tight">
@@ -78,12 +85,18 @@ function Hero() {
       </div>
 
       {/* Right Image Content */}
-      <div className="w-full md:w-1/2 flex justify-center">
-        <img
-          src={HeroImg}
-          alt="Hero illustration"
-          className="w-full max-w-[500px] h-auto object-contain"
-        />
+      <div className="w-full md:w-1/2 flex justify-center items-end h-full">
+        <div
+          className="w-[300px] h-[300px] md:w-[420px] md:h-[420px] rounded-full overflow-hidden 
+               border-4 border-[#6D65F2] shadow-xl shadow-[#6D65F260]
+               transition-transform duration-500 hover:scale-105"
+        >
+          <img
+            src={HeroImg}
+            alt="Hero illustration"
+            className="w-full h-full object-cover"
+          />
+        </div>
       </div>
     </div>
   );

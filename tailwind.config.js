@@ -4,10 +4,15 @@ export default {
   theme: {
     extend: {
       colors: {
-        gradientDark: '#0f0f0f',
-        gradientPurple: '#4b006e',
+        gradientDark: "#0f0f0f",
+        gradientPurple: "#4b006e",
+      },
+      fontFamily: {
+        orbitron: ["Orbitron", "sans-serif"],
       },
     },
   },
-  plugins: [],
-}
+  plugins: [
+    require('tailwind-scrollbar-hide')
+  ],
+};
