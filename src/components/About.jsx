@@ -28,11 +28,12 @@ function About() {
       >
         Hello, I'm{" "}
         <span className="text-purple-400 font-medium">Ghulam Ali</span> —
-        passionate about building smart and scalable web applications. I've
-        completed a full-stack development course from SMIT and constantly
-        explore new technologies to refine my skills. Focused on continuous
-        learning, I aim to transition into the IT industry by 2021 and
-        eventually move towards AI and data science.
+        assionate about building smart and scalable web applications. I began
+        learning IT and programming in 2022, completed a full-stack development
+        course from SMIT, and have been exploring new technologies ever since to
+        refine my skills. I'm focused on continuous learning and aim to build a
+        strong career in the IT industry, eventually moving toward AI and data
+        science.
       </p>
 
       <div
@@ -46,12 +47,7 @@ function About() {
           </button>
         </a>
 
-        <Link
-          to="projects"
-          smooth={true}
-          duration={500}
-          offset={-70}
-        >
+        <Link to="projects" smooth={true} duration={500} offset={-70}>
           <button className="px-6 py-2 cursor-pointer bg-purple-500 text-white font-medium rounded-lg hover:bg-purple-600 transition-all duration-300">
             View Projects
           </button>
