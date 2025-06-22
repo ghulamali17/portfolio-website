@@ -19,7 +19,7 @@ const Stats = () => {
       icon: <FaGlobe size={28} />,
       title: "Years of Experience",
       description: "Continuous learning journey",
-      value: 2,
+      value: 1,
     },
   ];
 

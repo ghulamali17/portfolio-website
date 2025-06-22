@@ -9,6 +9,7 @@ import { FaInstagram } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { Link } from "react-scroll";
 
 function Hero() {
   useEffect(() => {
@@ -63,25 +64,51 @@ function Hero() {
         </div>
         {/* Project / Contact  */}
         <div className="flex gap-6 mt-10">
-          <button className="px-6 py-3 flex items-center gap-2 rounded-lg text-white font-medium bg-[#0f0f0f] border border-white/10 shadow-[0_0_20px_#7c3aed50] hover:shadow-[0_0_30px_#7c3aed80] transition-all duration-300 backdrop-blur-md">
-            Projects <GrProjects />
-          </button>
-          <button className="px-6 py-3 flex items-center gap-2 rounded-lg text-white font-medium bg-[#0f0f0f] border border-white/10 shadow-[0_0_20px_#7c3aed50] hover:shadow-[0_0_30px_#7c3aed80] transition-all duration-300 backdrop-blur-md">
-            Contact <MdOutlineMail className="text-xl" />
-          </button>
+          <Link to="projects" smooth={true} duration={500} offset={-70}>
+            <button className="px-6 cursor-pointer py-3 flex items-center gap-2 rounded-lg text-white font-medium bg-[#0f0f0f] border border-white/10 shadow-[0_0_20px_#7c3aed50] hover:shadow-[0_0_30px_#7c3aed80] transition-all duration-300 backdrop-blur-md">
+              Projects <GrProjects />
+            </button>
+          </Link>
+
+          <Link to="contact" smooth={true} duration={500} offset={-70}>
+            <button className="px-6 cursor-pointer py-3 flex items-center gap-2 rounded-lg text-white font-medium bg-[#0f0f0f] border border-white/10 shadow-[0_0_20px_#7c3aed50] hover:shadow-[0_0_30px_#7c3aed80] transition-all duration-300 backdrop-blur-md">
+              Contact <MdOutlineMail className="text-xl" />
+            </button>
+          </Link>
         </div>
         {/* Socail  */}
-        <div className="flex gap-6 mt-10">
-          <div className="p-4 rounded-xl bg-[#0f0f0f]/60 border border-white/10 text-white shadow-[0_0_20px_#7c3aed40] hover:shadow-[0_0_30px_#7c3aed70] backdrop-blur-md transition-all duration-300 cursor-pointer">
-            <FaGithub className="text-xl" />
-          </div>
-          <div className="p-4 rounded-xl bg-[#0f0f0f]/60 border border-white/10 text-white shadow-[0_0_20px_#7c3aed40] hover:shadow-[0_0_30px_#7c3aed70] backdrop-blur-md transition-all duration-300 cursor-pointer">
-            <FaLinkedin className="text-xl" />
-          </div>
-          <div className="p-4 rounded-xl bg-[#0f0f0f]/60 border border-white/10 text-white shadow-[0_0_20px_#7c3aed40] hover:shadow-[0_0_30px_#7c3aed70] backdrop-blur-md transition-all duration-300 cursor-pointer">
-            <FaInstagram className="text-xl" />
-          </div>
-        </div>
+       <div className="flex gap-6 mt-10">
+  {/* GitHub */}
+  <a
+    href="https://github.com/ghulamali17"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="p-4 rounded-xl bg-[#0f0f0f]/60 border border-white/10 text-white shadow-[0_0_20px_#7c3aed40] hover:shadow-[0_0_30px_#7c3aed70] backdrop-blur-md transition-all duration-300 cursor-pointer"
+  >
+    <FaGithub className="text-xl" />
+  </a>
+
+  {/* LinkedIn */}
+  <a
+    href="https://www.linkedin.com/in/ghulam-ali-dev/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="p-4 rounded-xl bg-[#0f0f0f]/60 border border-white/10 text-white shadow-[0_0_20px_#7c3aed40] hover:shadow-[0_0_30px_#7c3aed70] backdrop-blur-md transition-all duration-300 cursor-pointer"
+  >
+    <FaLinkedin className="text-xl" />
+  </a>
+
+  {/* Instagram */}
+  <a
+    href="https://www.instagram.com/ghulam_.ali/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="p-4 rounded-xl bg-[#0f0f0f]/60 border border-white/10 text-white shadow-[0_0_20px_#7c3aed40] hover:shadow-[0_0_30px_#7c3aed70] backdrop-blur-md transition-all duration-300 cursor-pointer"
+  >
+    <FaInstagram className="text-xl" />
+  </a>
+</div>
+
       </div>
 
       {/* Right Image Content */}

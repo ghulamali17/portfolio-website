@@ -6,7 +6,7 @@ import { FaLaptopCode, FaCertificate, FaCogs } from "react-icons/fa";
 import ecommerce from "../assets/react.png";
 import ommart from "../assets/om.png";
 import firebaseProject from "../assets/firebase.png";
-import codeSnip from "../assets/tailwind.png";
+import codeSnip from "../assets/codesnip.png";
 import tailwind from "../assets/tailwind.png";
 import express from "../assets/express.png";
 import cert from "../assets/cert.jpg";
@@ -32,29 +32,29 @@ function Projects() {
       title: "React E-commerce Website",
       desc: "A responsive e-commerce frontend using React, Firebase, Redux, and Tailwind CSS with dynamic product loading.",
       img: ecommerce,
-      live: "#",
-      details: "#",
+      live: "https://github.com/ghulamali17/react-redux-ecommerce-website",
+      details: "https://github.com/ghulamali17/react-redux-ecommerce-website",
     },
     {
       title: "CodeSnip – Note-Taking App ",
       desc: "A full-stack note-taking app using React, Firebase, Redux, and Tailwind CSS to manage code/text snippets in real time.",
       img: codeSnip,
-      live: "#",
-      details: "#",
+      live: "https://wondrous-cajeta-e09e4d.netlify.app/",
+      details: "https://github.com/ghulamali17/paste-app",
     },
     {
       title: "Dynamic E-commerce Shopping Website.",
       desc: "A dynamic shirt shop built with HTML, CSS, Bootstrap, and JavaScript using JSON for products and an interactive cart.",
       img: ommart,
-      live: "#",
-      details: "#",
+      live: "https://ommart-ecommerce.netlify.app/",
+      details: "https://github.com/ghulamali17/ommart-ecommerce-website-template",
     },
     {
       title: "Firebase Social Media Website",
       desc: "A Firebase full-stack social app with one-click login, real-time chat, and instant post sharing.",
       img: firebaseProject,
-      live: "#",
-      details: "#",
+      live: "https://ghulamali17.github.io/quickpost-firebase-app/",
+      details: "https://github.com/ghulamali17/quickpost-firebase-app",
     },
   ];
 
@@ -150,7 +150,7 @@ function Projects() {
                       href={project.details}
                       className="bg-[#2d2d3f] text-white px-4 py-1.5 rounded-lg hover:bg-[#3d3d5f] transition"
                     >
-                      Details →
+                     Github Repo →
                     </a>
                   </div>
                 </div>

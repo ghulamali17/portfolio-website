@@ -23,7 +23,7 @@ function Navbar() {
                 spy={true}
                 smooth={true}
                 duration={500}
-                offset={-64} // Adjust for fixed nav height
+                offset={-64} 
                 activeClass="text-[#7C62F3]"
                 className="cursor-pointer hover:text-[#7C62F3] transition"
               >
@@ -52,7 +52,7 @@ function Navbar() {
                 offset={-64}
                 activeClass="text-[#7C62F3]"
                 className="cursor-pointer hover:text-[#7C62F3] text-lg transition"
-                onClick={() => setMenuOpen(false)} // close menu on click
+                onClick={() => setMenuOpen(false)} 
               >
                 {item}
               </ScrollLink>
