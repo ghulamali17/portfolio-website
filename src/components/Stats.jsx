@@ -7,7 +7,7 @@ const Stats = () => {
       icon: <FaCode size={28} />,
       title: "Total Projects",
       description: "Innovative web & mobile solutions crafted",
-      value: 4,
+      value: 5,
     },
     {
       icon: <FaCertificate size={28} />,

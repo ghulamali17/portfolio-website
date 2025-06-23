@@ -12,6 +12,7 @@ import express from "../assets/express.png";
 import cert from "../assets/cert.jpg";
 import cert1 from "../assets/cert1.jpg";
 import cert2 from "../assets/cert2.jpg";
+import foodProject from "../assets/food.png";
 
 function Projects() {
   const [activeTab, setActiveTab] = useState("Projects");
@@ -36,6 +37,13 @@ function Projects() {
       details: "https://github.com/ghulamali17/react-redux-ecommerce-website",
     },
     {
+      title: "React Based Food Delivery Website",
+      desc: "A modern and responsive food ordering web app with cart, search, filtering, and dynamic pricing using React & Redux.",
+      img: foodProject,
+      live: "https://foodzilla-web.netlify.app",
+      details: "https://github.com/ghu/react-food-delivery-website",
+    },
+    {
       title: "CodeSnip – Note-Taking App ",
       desc: "A full-stack note-taking app using React, Firebase, Redux, and Tailwind CSS to manage code/text snippets in real time.",
       img: codeSnip,
@@ -47,14 +55,15 @@ function Projects() {
       desc: "A dynamic shirt shop built with HTML, CSS, Bootstrap, and JavaScript using JSON for products and an interactive cart.",
       img: ommart,
       live: "https://ommart-ecommerce.netlify.app/",
-      details: "https://github.com/ghulamali17/ommart-ecommerce-website-template",
+      details:
+        "https://github.com/ghulamali17/ommart-ecommerce-website-template",
     },
     {
       title: "Firebase Social Media Website",
       desc: "A Firebase full-stack social app with one-click login, real-time chat, and instant post sharing.",
       img: firebaseProject,
-      live: "https://ghulamali17.github.io/quickpost-firebase-app/",
-      details: "https://github.com/ghulamali17/quickpost-firebase-app",
+      live: "https://foodzilla-web.netlify.app/",
+      details: "https://github.com/ghulamali17/react-food-delivery-website",
     },
   ];
 
@@ -69,13 +78,20 @@ function Projects() {
       title: "Python Data Structures",
       issued: "COURSERA",
     },
-    { img: cert2, title: "Programming for Everybody (Getting Started with Python)", issued: "COURSERA" },
+    {
+      img: cert2,
+      title: "Programming for Everybody (Getting Started with Python)",
+      issued: "COURSERA",
+    },
   ];
 
   const displayedProjects = showAll ? projects : projects.slice(0, 3);
 
   return (
-    <div id="projects" className="min-h-screen bg-[#0f0f0f] text-white px-4 py-12 flex flex-col items-center">
+    <div
+      id="projects"
+      className="min-h-screen bg-[#0f0f0f] text-white px-4 py-12 flex flex-col items-center"
+    >
       <h1
         className="text-[#6D65F2] text-4xl md:text-5xl font-bold mb-4 font-orbitron"
         data-aos="zoom-in"
@@ -129,7 +145,7 @@ function Projects() {
                   <img
                     src={project.img}
                     alt={project.title}
-                    className="w-full h-full object-contain"
+                    className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="p-6">
@@ -150,7 +166,7 @@ function Projects() {
                       href={project.details}
                       className="bg-[#2d2d3f] text-white px-4 py-1.5 rounded-lg hover:bg-[#3d3d5f] transition"
                     >
-                     Github Repo →
+                      Github Repo →
                     </a>
                   </div>
                 </div>
