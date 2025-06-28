@@ -28,7 +28,7 @@ function About() {
       >
         Hello, I'm{" "}
         <span className="text-purple-400 font-medium">Ghulam Ali</span> —
-        assionate about building smart and scalable web applications. I began
+        passionate about building smart and scalable web applications. I began
         learning IT and programming in 2022, completed a full-stack development
         course from SMIT, and have been exploring new technologies ever since to
         refine my skills. I'm focused on continuous learning and aim to build a

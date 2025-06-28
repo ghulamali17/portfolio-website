@@ -41,7 +41,7 @@ function Projects() {
       desc: "A modern and responsive food ordering web app with cart, search, filtering, and dynamic pricing using React & Redux.",
       img: foodProject,
       live: "https://foodzilla-web.netlify.app",
-      details: "https://github.com/ghu/react-food-delivery-website",
+      details: "https://github.com/ghulamali17/react-food-delivery-website",
     },
     {
       title: "CodeSnip – Note-Taking App ",
@@ -62,7 +62,7 @@ function Projects() {
       title: "Firebase Social Media Website",
       desc: "A Firebase full-stack social app with one-click login, real-time chat, and instant post sharing.",
       img: firebaseProject,
-      live: "https://foodzilla-web.netlify.app/",
+      live: "https://ghulamali17.github.io/quickpost-firebase-app/",
       details: "https://github.com/ghulamali17/react-food-delivery-website",
     },
   ];
